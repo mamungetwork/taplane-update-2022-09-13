@@ -1,0 +1,155 @@
+.what_we_do {
+  overflow: unset;
+  padding: 150px 0 100px;
+  isolation: unset;
+
+  .content {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 60px;
+    align-items: center;
+
+    .left_content {
+      .graphics {
+        width: 100%;
+        max-width: 500px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .right_content {
+      align-items: center;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      .card_content {
+        min-height: 187px;
+        max-height: 187px;
+        transition: 0.5s;
+      }
+      .card {
+        text-align: center;
+        padding: 30px;
+        position: relative;
+        border: 1px solid transparent;
+        background-color: #fff;
+        border-radius: 18px;
+        box-shadow: 0 3px 45px rgba(0, 0, 0, 0.08);
+        max-height: 187px;
+        overflow-y: hidden;
+        z-index: 1;
+        transition: all 0.6s !important;
+
+        .icon {
+          height: 76px;
+          margin-bottom: 15px;
+          transition: all 0.3s;
+
+          path {
+            transition: all 1s !important;
+          }
+        }
+        h3 {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 24px;
+          color: $darkColor;
+          margin-bottom: 10px;
+          transition: all 0.5s;
+        }
+        p {
+          margin-top: 20px;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.5s !important;
+          transition-delay: 0.3s;
+        }
+        .left_gear,
+        .right_gear,
+        .bottom_gear {
+          transition: 0.8s;
+          transform-box: fill-box;
+          transform-origin: center;
+          transform: translate(0, 0) rotate(0);
+        }
+        .store,
+        .cart {
+          transition: 0.8s;
+          transform-box: fill-box;
+          transform-origin: center;
+          transform: translate(0, 0);
+        }
+        .code,
+        .code1,
+        .c_gear {
+          transition: 0.8s;
+          transform-box: fill-box;
+          transform-origin: center;
+          transform: scale(1) rotate(0deg);
+        }
+
+        &:hover {
+          z-index: 2;
+          margin-top: -80px;
+          box-shadow: 0px 3px 45px rgba(221, 56, 6, 0.35);
+          border: 1px solid $primaryColor;
+          max-height: 563px;
+
+          p {
+            margin-top: 0px;
+            opacity: 1;
+            visibility: visible;
+          }
+
+          #light {
+            fill: $primaryColor;
+          }
+          #dark {
+            fill: $lightShade;
+          }
+          #white {
+            fill: #fff;
+          }
+
+          .layer3,
+          .layer2 {
+            transform: translate(0, -5.592px) !important;
+          }
+
+          .left_gear {
+            transform: translate(0, 25px) rotate(-360deg);
+          }
+          .right_gear {
+            transform: translate(0, -25px) rotate(-360deg);
+          }
+
+          .bottom_gear {
+            transform: translate(0, -35px) rotate(-360deg);
+          }
+          .code {
+            transform: scale(1.2) rotate(180deg);
+          }
+          .code1 {
+            transform: scale(1) rotate(180deg);
+          }
+          .c_gear {
+            transform: scale(1) rotate(-180deg);
+          }
+
+          .store {
+            transform: translate(-35px, 0);
+          }
+
+          .cart {
+            transform: translate(40px, 0);
+          }
+        }
+      }
+    }
+  }
+}
