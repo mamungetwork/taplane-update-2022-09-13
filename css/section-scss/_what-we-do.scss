@@ -86,11 +86,21 @@
         }
         .code,
         .code1,
-        .c_gear {
+        .c_gear,
+        .third_box,
+        .second_box,
+        .first_box {
           transition: 0.8s;
           transform-box: fill-box;
           transform-origin: center;
           transform: scale(1) rotate(0deg);
+        }
+
+        .fourth_box {
+          transition: 0.8s;
+          transform-box: fill-box;
+          transform-origin: center;
+          transform: scale(0.6) rotate(0deg);
         }
 
         &:hover {
@@ -147,6 +157,29 @@
 
           .cart {
             transform: translate(40px, 0);
+          }
+
+          .v2x {
+            #white {
+              transform: scale(1) rotate(180deg);
+            }
+          }
+
+          .first_box {
+            transform: translateX(15px) rotate(180deg);
+            fill: $primaryColor !important;
+          }
+          .second_box {
+            transform: rotate(-225deg);
+            fill: $primaryColor !important;
+          }
+          .third_box {
+            transform: translateX(0px) rotate(225deg);
+            fill: $primaryColor !important;
+          }
+          .fourth_box {
+            transform: scale(1) rotate(225deg) translateY(0px);
+            fill: $primaryColor !important;
           }
         }
       }

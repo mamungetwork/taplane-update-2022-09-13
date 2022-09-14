@@ -30,6 +30,10 @@
   .about_us .information {
     grid-template-columns: 1fr 1fr;
   }
+
+  .about_us .stats_section {
+    padding: 30px;
+  }
   // .about_us .stats_section {
   //   margin-top: 60px;
   // }
@@ -102,7 +106,7 @@
     }
   }
   .about_us .stats_section .stats_details {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .contact .contact_bg .left-image {
     width: 85%;

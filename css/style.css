@@ -466,11 +466,20 @@ footer,
 }
 .what_we_do .content .right_content .card .code,
 .what_we_do .content .right_content .card .code1,
-.what_we_do .content .right_content .card .c_gear {
+.what_we_do .content .right_content .card .c_gear,
+.what_we_do .content .right_content .card .third_box,
+.what_we_do .content .right_content .card .second_box,
+.what_we_do .content .right_content .card .first_box {
   transition: 0.8s;
   transform-box: fill-box;
   transform-origin: center;
   transform: scale(1) rotate(0deg);
+}
+.what_we_do .content .right_content .card .fourth_box {
+  transition: 0.8s;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(0.6) rotate(0deg);
 }
 .what_we_do .content .right_content .card:hover {
   z-index: 2;
@@ -520,6 +529,25 @@ footer,
 }
 .what_we_do .content .right_content .card:hover .cart {
   transform: translate(40px, 0);
+}
+.what_we_do .content .right_content .card:hover .v2x #white {
+  transform: scale(1) rotate(180deg);
+}
+.what_we_do .content .right_content .card:hover .first_box {
+  transform: translateX(15px) rotate(180deg);
+  fill: #f13b0f !important;
+}
+.what_we_do .content .right_content .card:hover .second_box {
+  transform: rotate(-225deg);
+  fill: #f13b0f !important;
+}
+.what_we_do .content .right_content .card:hover .third_box {
+  transform: translateX(0px) rotate(225deg);
+  fill: #f13b0f !important;
+}
+.what_we_do .content .right_content .card:hover .fourth_box {
+  transform: scale(1) rotate(225deg) translateY(0px);
+  fill: #f13b0f !important;
 }
 
 /* ******************** WHAT WE DO? STYLING END ******************** */
@@ -698,7 +726,7 @@ footer,
 .about_us .stats_section .stats_details {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 .about_us .stats_section .stats_details .stats h4 {
@@ -1162,6 +1190,9 @@ footer .content .contact_info > div a {
   .about_us .information {
     grid-template-columns: 1fr 1fr;
   }
+  .about_us .stats_section {
+    padding: 30px;
+  }
 }
 @media screen and (max-width: 950px) {
   .landing_section {
@@ -1224,7 +1255,7 @@ footer .content .contact_info > div a {
     margin: 0 auto 20px;
   }
   .about_us .stats_section .stats_details {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .contact .contact_bg .left-image {
     width: 85%;
