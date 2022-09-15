@@ -417,18 +417,18 @@ footer,
 }
 .what_we_do .content .right_content .card_content {
   min-height: 187px;
-  max-height: 187px;
+  max-height: 207px;
   transition: 0.5s;
 }
 .what_we_do .content .right_content .card {
   text-align: center;
-  padding: 30px;
+  padding: 40px 30px 30px;
   position: relative;
   border: 1px solid transparent;
   background-color: #fff;
   border-radius: 18px;
   box-shadow: 0 3px 45px rgba(0, 0, 0, 0.08);
-  max-height: 187px;
+  max-height: 207px;
   overflow-y: hidden;
   z-index: 1;
   transition: all 0.6s !important;
@@ -446,7 +446,6 @@ footer,
   font-size: 20px;
   line-height: 24px;
   color: #333333;
-  margin-bottom: 10px;
   transition: all 0.5s;
 }
 .what_we_do .content .right_content .card p {
@@ -494,11 +493,15 @@ footer,
   box-shadow: 0px 3px 45px rgba(221, 56, 6, 0.35);
   border: 1px solid #f13b0f;
   max-height: 563px;
+  padding: 30px;
 }
 .what_we_do .content .right_content .card:hover p {
   margin-top: 0px;
   opacity: 1;
   visibility: visible;
+}
+.what_we_do .content .right_content .card:hover h3 {
+  margin-bottom: 10px;
 }
 .what_we_do .content .right_content .card:hover #light {
   fill: #f13b0f;
