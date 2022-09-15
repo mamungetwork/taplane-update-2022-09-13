@@ -80,29 +80,32 @@
       }
 
       .hex-1.active {
-        background: #7e1700;
+        background: #c12f0c;
       }
       .hex-2.active {
-        background: #5e1201;
+        background: #d43f1a;
       }
       .hex-3.active {
-        background: #681705;
+        background: #f13609;
       }
       .hex-4.active {
-        background: #7c1801;
+        background: #b12300;
       }
       .hex-5.active {
-        background: #681705;
+        background: #f13609;
       }
       .hex-6.active {
-        background: #5e1201;
+        background: #d43f1a;
       }
       .hex-7.active {
-        background: #7e1700;
+        background: #c12f0c;
       }
     }
 
     .right_content {
+      .top {
+        margin-bottom: 80px;
+      }
       .graphics {
         width: 100%;
         max-width: 500px;

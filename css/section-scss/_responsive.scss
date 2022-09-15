@@ -1,3 +1,8 @@
+@media screen and (max-width: 1280px) {
+  .landing_section .content {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 1220px) {
   .landing_section .content .info {
     height: 342px;
@@ -276,6 +281,15 @@
   .landing_section .content .info h1 {
     font-size: 52px;
     line-height: 60px;
+  }
+
+  .popup .content .popup_body form .form_success .success_content .image {
+    width: 100%;
+    height: unset;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
   }
 }
 @media screen and (max-width: 380px) {

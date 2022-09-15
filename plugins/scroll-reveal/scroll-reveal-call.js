@@ -59,14 +59,7 @@ ScrollReveal().reveal(".card h3", {
   easing: "cubic-bezier(.56,.34,.4,1)",
   interval: 50,
 });
-ScrollReveal().reveal(".card .desc", {
-  delay: 600,
-  duration: 500,
-  distance: "20px",
-  origin: "bottom",
-  easing: "cubic-bezier(.56,.34,.4,1)",
-  interval: 50,
-});
+
 /* ***************************** WHAT WE DO SECTION REVEAL END ***************************** */
 
 /* ***************************** ABOUT SECTION REVEAL Start ***************************** */

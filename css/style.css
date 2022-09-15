@@ -8,10 +8,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body ::selection {
   background: #ff8161;
   color: #fff;
@@ -40,7 +36,7 @@ p {
   font-weight: normal;
   font-size: 15px;
   line-height: 22px;
-  color: #8f8f8f;
+  color: #555;
 }
 
 .btn {
@@ -101,6 +97,12 @@ p {
   font-size: 46px;
   text-transform: capitalize;
   margin-bottom: 15px;
+}
+.top p {
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 25px;
+  color: #555;
 }
 
 .landing_section,
@@ -190,6 +192,8 @@ footer,
 .landing_section .content .info {
   width: 100%;
   margin-top: -150px;
+  position: relative;
+  z-index: 6;
 }
 .landing_section .content h1 {
   font-weight: 800;
@@ -393,6 +397,9 @@ footer,
   grid-template-columns: 4fr 5fr;
   gap: 60px;
   align-items: center;
+}
+.what_we_do .content .left_content .top {
+  margin-bottom: 80px;
 }
 .what_we_do .content .left_content .graphics {
   width: 100%;
@@ -627,25 +634,28 @@ footer,
   transform: translate(-50%, -50%) scale(1);
 }
 .how_we_can_help .content .left_content .hex-1.active {
-  background: #7e1700;
+  background: #c12f0c;
 }
 .how_we_can_help .content .left_content .hex-2.active {
-  background: #5e1201;
+  background: #d43f1a;
 }
 .how_we_can_help .content .left_content .hex-3.active {
-  background: #681705;
+  background: #f13609;
 }
 .how_we_can_help .content .left_content .hex-4.active {
-  background: #7c1801;
+  background: #b12300;
 }
 .how_we_can_help .content .left_content .hex-5.active {
-  background: #681705;
+  background: #f13609;
 }
 .how_we_can_help .content .left_content .hex-6.active {
-  background: #5e1201;
+  background: #d43f1a;
 }
 .how_we_can_help .content .left_content .hex-7.active {
-  background: #7e1700;
+  background: #c12f0c;
+}
+.how_we_can_help .content .right_content .top {
+  margin-bottom: 80px;
 }
 .how_we_can_help .content .right_content .graphics {
   width: 100%;
@@ -670,9 +680,7 @@ footer,
   bottom: 10px;
   right: 0;
   width: 95%;
-}
-
-/* ******************** WHAT WE DO? STYLING END ******************** */
+} /* ******************** WHAT WE DO? STYLING END ******************** */
 /* ******************** ABOUT US STYLING START ******************** */
 .about_us {
   padding: 100px 0 150px;
@@ -702,18 +710,15 @@ footer,
   overflow: hidden;
 }
 .about_us .more_info p {
-  overflow: hidden;
+  font-size: 20px;
+  line-height: 30px;
 }
 .about_us .stats_section {
   width: 100%;
   isolation: isolate;
   position: relative;
-  background: #f13b0f;
   text-align: center;
-  border-radius: 24px;
-  box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.12);
-  overflow: hidden;
-  padding: 40px 60px 50px;
+  padding: 0 !important;
 }
 .about_us .stats_section h2 {
   font-weight: bold;
@@ -727,7 +732,15 @@ footer,
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 30px;
+}
+.about_us .stats_section .stats_details .stats {
+  background: #f13b0f;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  min-width: 160px;
 }
 .about_us .stats_section .stats_details .stats h4 {
   font-weight: bold;
@@ -746,6 +759,7 @@ footer,
   left: -40px;
   z-index: -1;
   height: 100%;
+  display: none;
 }
 .about_us .stats_section .stats_bg img {
   height: 100%;
@@ -766,14 +780,14 @@ footer,
   font-size: 46px;
   text-align: center;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .contact .content p {
   color: #fff;
   margin-bottom: 50px;
 }
 .contact .content .btn {
-  font-size: 22px;
+  font-size: 26px;
   width: 100%;
   max-width: 320px;
   padding: 20px 70px;
@@ -821,6 +835,7 @@ footer .content p {
   padding-bottom: 30px;
   max-width: 680px;
   margin: 0 auto;
+  color: rgb(167, 167, 167);
 }
 footer .content .contact_info {
   width: 100%;
@@ -922,11 +937,13 @@ footer .content .contact_info > div a {
   border-radius: 24px;
   background: #fff;
   padding: 30px;
+  transition: all 0.3s;
 }
 .popup .content h2 {
   font-weight: bold;
   font-size: 32px;
   color: #333333;
+  transition: all 0.3s;
 }
 .popup .content .close_btn {
   width: 16px;
@@ -943,18 +960,26 @@ footer .content .contact_info > div a {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s;
 }
 .popup .content .popup_body {
   width: 100%;
+  transition: all 0.3s;
 }
 .popup .content .popup_body form {
+  width: 100%;
+  position: relative;
+  transition: all 0.3s;
+}
+.popup .content .popup_body form .form_input {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   column-gap: 30px;
   row-gap: 20px;
+  transition: all 0.3s;
 }
 .popup .content .popup_body form .group {
   width: 100%;
@@ -976,7 +1001,8 @@ footer .content .contact_info > div a {
   margin-bottom: 9px;
   margin-left: 10px;
 }
-.popup .content .popup_body form .field_group .field {
+.popup .content .popup_body form .field_group .field,
+.popup .content .popup_body form .field_group #project {
   width: 100%;
   height: 55px;
   line-height: 55px;
@@ -991,17 +1017,24 @@ footer .content .contact_info > div a {
   transition: 0.3s;
   outline: 0;
 }
-.popup .content .popup_body form .field_group .field ::placeholder {
-  color: #8f8f8f;
+.popup .content .popup_body form .field_group .field ::placeholder,
+.popup .content .popup_body form .field_group #project ::placeholder {
+  color: #555;
 }
-.popup .content .popup_body form .field_group .field:hover {
+.popup .content .popup_body form .field_group .field:focus,
+.popup .content .popup_body form .field_group #project:focus {
+  border-color: rgb(28, 190, 69);
+  background: #fff;
+}
+.popup .content .popup_body form .field_group .field:hover,
+.popup .content .popup_body form .field_group #project:hover {
   border-color: #fbcec3;
   background: #fff;
   box-shadow: 0 0 35px rgba(241, 60, 15, 0.1);
 }
-.popup .content .popup_body form .field_group .field:focus {
-  border-color: #f13b0f;
+.popup .content .popup_body form .field_group #project {
   background: #fff;
+  border: 1px solid rgb(199, 199, 199);
 }
 .popup .content .popup_body form .field_group #message {
   height: 120px;
@@ -1009,7 +1042,8 @@ footer .content .contact_info > div a {
   padding-top: 15px;
   max-width: 990px;
 }
-.popup .content .popup_body form .message {
+.popup .content .popup_body form .message,
+.popup .content .popup_body form .dropdown {
   max-width: 100%;
 }
 .popup .content .popup_body form .btn {
@@ -1017,13 +1051,50 @@ footer .content .contact_info > div a {
   border-color: #f13b0f;
   color: #fff;
   max-width: 482px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
 }
 .popup .content .popup_body form .btn:hover {
   color: #f13b0f;
   background: #fff;
   font-size: 16px;
 }
+.popup .content .popup_body form .form_success {
+  width: 100%;
+  top: 100px;
+  text-align: center;
+  display: none;
+  padding: 20px 0;
+  transition: all 0.3s;
+}
+.popup .content .popup_body form .form_success .success_content {
+  transition: all 0.3s;
+  width: 100%;
+}
+.popup .content .popup_body form .form_success .success_content .image {
+  height: 260px;
+  margin-bottom: 40px;
+}
+.popup .content .popup_body form .form_success .success_content .image img {
+  height: 100%;
+}
+.popup .content .popup_body form .form_success .success_content h2 {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.popup .content .popup_body form .form_success .success_content p {
+  font-size: 18px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  line-height: 26px;
+}
+.popup .content .popup_body form .form_success .success_content .btn {
+  display: inline-block;
+}
 .popup .content .popup_footer {
+  transition: all 0.3s;
   margin-top: 50px;
 }
 .popup .content .popup_footer h2 {
@@ -1100,6 +1171,12 @@ footer .content .contact_info > div a {
   min-width: 17px;
   min-height: 20px;
 }
+.popup .hide {
+  display: none !important;
+}
+.popup .show {
+  display: block !important;
+}
 
 .popup_open {
   overflow: hidden;
@@ -1111,6 +1188,60 @@ footer .content .contact_info > div a {
 }
 .popup_active .content {
   transform: translate(-50%, -50%) scale(1);
+}
+
+/* focus/disabled styles, you can change this for accessibility */
+.button:focus,
+.button:disabled {
+  outline: none;
+  background: #e6a3a3 !important;
+  border: 0 !important;
+}
+
+.spin:hover {
+  outline: none;
+  transform: translate(0) !important;
+  border: 0 !important;
+  color: #fff !important;
+}
+
+/* This is the space for the spinner to appear, applied to the button */
+.spin {
+  display: block;
+}
+
+/* position of the spinner when it appears, you might have to change these values */
+.spin .spinner {
+  left: 20px;
+  top: 13px;
+  width: 20px;
+  display: block;
+  position: absolute;
+}
+
+/* spinner animation */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* The actual spinner element is a pseudo-element */
+.spin .spinner::before {
+  content: "";
+  width: 15px; /* Size of the spinner */
+  height: 15px; /* Change as desired */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: solid 4px #fff; /* Thickness/color of spinner track */
+  border-bottom-color: #f13b0f; /* Color of variant spinner piece */
+  animation: 0.8s linear infinite spinner; /* speed of spinner */
+  transform: translate(-50%, -50%);
+  will-change: transform;
 }
 
 /* ******************** POPUP STYLING END ******************** */
@@ -1164,6 +1295,11 @@ footer .content .contact_info > div a {
 }
 /* ******************** ANIMATION STYLING END ******************** */
 /* ******************** RESPONSIVE STYLING START ******************** */
+@media screen and (max-width: 1280px) {
+  .landing_section .content {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 1220px) {
   .landing_section .content .info {
     height: 342px;
@@ -1418,6 +1554,14 @@ footer .content .contact_info > div a {
   .landing_section .content .info h1 {
     font-size: 52px;
     line-height: 60px;
+  }
+  .popup .content .popup_body form .form_success .success_content .image {
+    width: 100%;
+    height: unset;
+  }
+  .popup .content .popup_body form .form_success .success_content .image img {
+    width: 100%;
+    object-fit: contain;
   }
 }
 @media screen and (max-width: 380px) {
