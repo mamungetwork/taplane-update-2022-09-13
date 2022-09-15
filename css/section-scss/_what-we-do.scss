@@ -32,22 +32,21 @@
 
       .card_content {
         min-height: 187px;
-        max-height: 187px;
+        max-height: 207px;
         transition: 0.5s;
       }
       .card {
         text-align: center;
-        padding: 30px;
+        padding: 40px 30px 30px;
         position: relative;
         border: 1px solid transparent;
         background-color: #fff;
         border-radius: 18px;
         box-shadow: 0 3px 45px rgba(0, 0, 0, 0.08);
-        max-height: 187px;
+        max-height: 207px;
         overflow-y: hidden;
         z-index: 1;
         transition: all 0.6s !important;
-
         .icon {
           height: 76px;
           margin-bottom: 15px;
@@ -62,7 +61,6 @@
           font-size: 20px;
           line-height: 24px;
           color: $darkColor;
-          margin-bottom: 10px;
           transition: all 0.5s;
         }
         p {
@@ -112,11 +110,15 @@
           box-shadow: 0px 3px 45px rgba(221, 56, 6, 0.35);
           border: 1px solid $primaryColor;
           max-height: 563px;
+          padding: 30px;
 
           p {
             margin-top: 0px;
             opacity: 1;
             visibility: visible;
+          }
+          h3 {
+            margin-bottom: 10px;
           }
 
           #light {
