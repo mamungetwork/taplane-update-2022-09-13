@@ -10,6 +10,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   ::selection {
     background: $selectionColor;
@@ -99,15 +103,9 @@ p {
   }
   h2 {
     font-weight: bold;
-    font-size: 46px;
-    text-transform: capitalize;
-    margin-bottom: 15px;
-  }
-  p {
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 25px;
-    color: #555;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
   }
 }
 
